@@ -4,4 +4,13 @@ config/development.config.php
 data/cache/*
 !data/cache/.gitkeep
 phpunit.xml
-.env
+composer.phar
+config/autoload/*.local.php
+*.mo
+data/logs/
+data/cache/
+data/sessions/
+data/tmp/
+temp/
+data/DoctrineORMModule/Proxy/
+data/DoctrineORMModule/cache/
