@@ -98,7 +98,7 @@ class MeetupForm extends Form implements InputFilterProviderInterface
                     [
                         'name' => Callback::class,
                         'options' => [
-                            "messages" => [Callback::INVALID_VALUE => 'Start date is too old'],
+                            "messages" => [Callback::INVALID_VALUE => 'Start date is too old, it must be at least today\'s date'],
                             "callback" => function($value) {
                                 $today = new \DateTimeImmutable();
                                 $startDate = new \DateTimeImmutable($value);
@@ -122,9 +122,9 @@ class MeetupForm extends Form implements InputFilterProviderInterface
                             "messages" => [Callback::INVALID_VALUE => 'End date can\'t be lower than Start date'],
                             "callback" => function($value, $context) : bool
                             {
-                                $startDate = $context['startDate']['day'].'/'.
-                                    $context['startDate']['month'].'/'.
-                                    $context['startDate']['year'].' '.
+                                $startDate = $context['startDate']['year'].'-'.
+                                    $context['startDate']['month'].'-'.
+                                    $context['startDate']['day'].' '.
                                     $context['startDate']['hour'].':'.
                                     $context['startDate']['minute'];
 
