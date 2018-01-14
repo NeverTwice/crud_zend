@@ -1,4 +1,7 @@
-<h1>Detail de meetup <b><a href="/meetups/edit/<?= $meetup->getId()?>"> Editer </a></b> </h1>
+<h1>Detail de meetup <b>
+        <?php /* @var $meetup \Meetup\Entity\Meetup */ ?>
+        <a href="/meetups/edit/<?= $meetup->getId()?>"> Editer </a></b>
+</h1>
 
 <h4><?= $meetup->getTitle() ?> </h4>
 <h4><?= $meetup->getDescription() ?> </h4>

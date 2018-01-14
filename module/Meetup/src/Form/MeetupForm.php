@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Meetup\Form;
 
 
-use Meetup\Form\Validators\DateValidator;
 use Zend\Filter\DateTimeSelect;
 use Zend\Form\Element;
 use Zend\Form\Form;
@@ -13,7 +12,6 @@ use Zend\InputFilter\InputFilterProviderInterface;
 use Zend\Validator\Callback;
 use Zend\Validator\Date;
 use Zend\Validator\StringLength;
-use Meetup\Form\Validators;
 
 class MeetupForm extends Form implements InputFilterProviderInterface
 {

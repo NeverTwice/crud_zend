@@ -57,7 +57,7 @@ class Meetup
         $this->endDate = $endDate;
     }
 
-    public function exchangeArray($data)
+    public function exchangeArray(array $data) : void
     {
         $this->id = (isset($data['id'])) ? $data['id'] : null;
         $this->title = (isset($data['title'])) ? $data['title'] : null;
@@ -66,7 +66,7 @@ class Meetup
         $this->endDate = (isset($data['endDate'])) ? new \DateTimeImmutable($data['endDate']) : null;
     }
 
-    public function getArrayCopy()
+    public function getArrayCopy() : Meetup
     {
         return get_object_vars($this);
     }
