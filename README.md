@@ -1,10 +1,13 @@
 # TP - CRUD end ZEND
 
+Samuel ALVES DE AZEVEDO ANTUNES
+
+4A IW2
+
 ## Sommaire
 
 * [Fonctionnalités](#fonctionnalités)
 * [Motivation](#motivation)
-* [Requires](#requires)
 * [Contributors](#contributors)
 * [License](#license)
 
@@ -14,6 +17,7 @@
 * Créer un meetup
 * Update d'un meetup
 * Suppression d'un meetup
+* Vérification de code avec GrumPHP (phplint & php-cs-fixer)
 * Retour au sommaire
 
 ## Motivation
@@ -23,13 +27,6 @@
 
 [Retour au sommaire](#sommaire)
 
-## Requires
-
-* Git
-* Docker + Docker-compose (Linux, MAC et Windows 10 Pro) ou Docker Toolbox
-
-
-[Retour au sommaire](#sommaire)
 
 ## Contributors
 
