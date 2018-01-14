@@ -1,0 +1,15 @@
+<h1>Meetups</h1>
+
+<ul>
+    <?php foreach ($this->meetups as $meetup): /* @var $meetup \Meetup\Entity\Meetup * */ ?>
+        <div class="block">
+            <li>
+                <a href="/meetups/view/<?= $meetup->getId() ?>"><?= $meetup->getTitle() ?></a>
+                 ->
+                <a href="/meetups/delete/<?= $meetup->getId() ?>"> Supprimer </a>
+            </li>
+        </div>
+    <?php endforeach; ?>
+</ul>
+
+<a href="<?= $this->url('meetups/add'); ?>" class="btn btn-primary">Add new</a>

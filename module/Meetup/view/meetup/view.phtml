@@ -1,0 +1,6 @@
+<h1>Detail de meetup <b><a href="/meetups/edit/<?= $meetup->getId()?>"> Editer </a></b> </h1>
+
+<h4><?= $meetup->getTitle() ?> </h4>
+<h4><?= $meetup->getDescription() ?> </h4>
+<h4><?= $meetup->getStartDate()->format('d/m/y h:i') ?> </h4>
+<h4><?= $meetup->getEndDate()->format('d/m/y h:i') ?> </h4>
