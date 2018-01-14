@@ -66,7 +66,7 @@ class Meetup
         $this->endDate = (isset($data['endDate'])) ? new \DateTimeImmutable($data['endDate']) : null;
     }
 
-    public function getArrayCopy() : Meetup
+    public function getArrayCopy()
     {
         return get_object_vars($this);
     }
