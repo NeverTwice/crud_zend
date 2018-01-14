@@ -3,4 +3,9 @@ parameters:
     bin_dir: vendor/bin
     tasks:
       phplint: ~
-      phpcsfixes: ~
+      phpcsfixer:
+                  config_file: ~
+                  config: ~
+                  fixers: []
+                  level: ~
+                  verbose: true
